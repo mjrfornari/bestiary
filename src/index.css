@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@import '~@fullcalendar/core/main.css';
+@import '~@fullcalendar/daygrid/main.css';
+
+.fc-button {
+  background: #161252;
+  border: #161252;
+}
+
+
+.fc-button:hover {
+  background: #0f0c36;
+  border: #0f0c36;
+}
+
+.fc-button:disabled {
+  background: #161252;
+  border: #161252;
+}
+
+.fc-unthemed td.fc-today {
+  background: #161252;
+}

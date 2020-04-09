@@ -1,0 +1,96 @@
+.bestiary-item {
+    border: none;
+    color: #46b3e6;
+    background-color: #161252;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+    border-radius: 5px 5px 5px 5px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    flex: 1;
+    font-size: 0.8rem;
+    max-height: 75px;
+}
+
+.bestiary-item:hover {
+    text-decoration: none;
+    color: #8ed5f6;
+    background-color: #161252b6;
+}
+
+.bestiary-item:active {
+    transform: translateY(1px) translateX(1px);
+}
+
+.bestiary-item .row1 {
+    width: 20%;
+    flex: 1;
+}
+
+.bestiary-item .row2 {
+    width: 60%;
+    display: flex;
+    flex: 1 1 60%;
+    flex-direction: row;
+}
+
+.bestiary-item .row2 .row2Wrapper{
+    display: flex;
+    flex-direction: row;
+    flex:1;
+    align-items: center;
+    justify-content: center;
+}
+
+.bestiary-item .row2 div img{
+    height: 20px;
+    margin-right: 5px;
+    width: 20px;
+}
+
+.bestiary-item .row1 img{
+    max-height: 50px;
+    width: auto;
+}
+
+
+.bestiary-item .row3 {
+    width: 20%;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bestiary-item .row3 button{
+    border: 0px;
+    background-color: transparent;
+}
+
+.bestiary-item .row3 .playIcon {
+    color: #46b3e6;
+}
+
+.bestiary-item .row3 .playIcon:hover {
+    color: #46758b;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .bestiary-item .row2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bestiary-item .row1 {
+        flex: 1 1 20%;
+    }
+
+    .bestiary-item {
+        max-height: none;
+    }
+}

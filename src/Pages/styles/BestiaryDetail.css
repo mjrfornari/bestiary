@@ -1,0 +1,110 @@
+#BestiaryDetail {
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-content: center;
+    align-items: center;
+}
+
+#BestiaryDetail .detailHeader {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin: 0px 30px 0px 30px;
+    min-height: 70px;
+}
+
+#BestiaryDetail .detailHeader h2{
+    color: #161252;
+    margin-bottom: 0;
+    flex: 1;
+}
+
+#BestiaryDetail .detailHeader img{
+    margin-left: 30px;
+    max-height: 50px;
+    width: auto;
+}
+
+
+#BestiaryDetail .detailHeader button{
+    margin-left: 30px;
+    height: 35px;
+    width: 35px;
+    background-color: #161252;
+    border-radius: 4px;
+    border: none;
+    color: #46b3e6;
+}
+
+#BestiaryDetail span{
+    color: #161252;
+    margin: 30px;
+}
+
+#BestiaryDetail .details {
+    flex: 1;
+    width: calc(70vw - 60px);
+    border-radius: 10px;
+    border: 4px solid #161252;
+    margin: 30px;
+    margin-top: 0;
+}
+
+#BestiaryDetail .details p{
+    color: #161252;
+    text-align: justify;
+    margin: 5px;
+}
+
+#BestiaryDetail .bestiaryVideo {
+    margin-top: 0px;
+    max-height: calc(calc(70vw - 60px) * 9 / 16);
+    max-width: calc(45vh * 16 / 9);
+    height: 45vh;
+    width: calc(70vw - 60px);
+    border-radius: 4px;
+    background-color: transparent;
+    margin-bottom: 30px
+}
+
+#BestiaryDetail .bestiaryVideo button{
+    border: none;
+    background-color: transparent;
+}
+
+
+#BestiaryDetail .bestiaryVideo img {
+    border-radius: 10px;
+    border: 4px solid #161252;
+    vertical-align: middle;
+    background: black;
+    flex:1;
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #BestiaryDetail .bestiaryVideo {
+        margin-top: 0px;
+        max-height: calc(calc(100vw - 60px) * 9 / 16);
+        max-width: calc(40vh * 16 / 9);
+        height: 40vh;
+        width: calc(100vw - 60px);
+        border-radius: 4px;
+        background-color: transparent;
+    }
+
+    #BestiaryDetail .detailHeader {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #BestiaryDetail .details {
+        width: calc(100vw - 60px);
+    }
+}

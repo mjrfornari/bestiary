@@ -1,0 +1,30 @@
+.news-item {
+    background-color: #161252;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.news-item:last-child {
+    margin-bottom: 0;
+}
+
+
+.news-item a {
+    color: #B5EFF0;
+}
+
+.news-item a:hover {
+    text-decoration: none;
+}
+
+.news-item img {
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(81, 151, 151);
+    float: right;
+    vertical-align: middle;
+    margin-top: 2px;
+}

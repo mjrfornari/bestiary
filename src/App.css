@@ -1,38 +1,278 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Odibee+Sans&family=Raleway&display=swap');
+
+/*Color Pallete: https://colorhunt.co/palette/163897*/
+/*#161252;*/
+
+::-webkit-scrollbar {
+  width: 12px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #161252;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0); 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #2f279d28;
+}
+
+
+*, html {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+h1, h2, h3, h4 {
+  font-family: 'Cinzel', serif;
+}
+
+
+html {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+#app {
+  flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  align-content: stretch;
+  height: 100vh;
+  /* background: #fefeff; */
+  background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+  /* background-image: linear-gradient(90deg, #93a5cf 0%, #e4efe9 100%); */
+  color: #46b3e6;
+  width: 100%;
+}
+
+.navBar {
+  font-family: 'Odibee Sans', cursive;
+  color: #46b3e6;
+  background: #161252;
+  /* height: 50px; */
+}
+
+.nav-link {
+  font-family: 'Odibee Sans', cursive;
+  color: #46b3e6;
+  font-size: 1.2rem;
+}
+
+.navbar-light .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-link {
+  color: #46b3e6;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #1674a0;
+}
+
+
+.title {
+  color: #46b3e6;
+  font-size: 1.7rem;
+  display: flex;
+  height: auto;
+}
+
+.title:hover {
+  color: #3e5e6d;
+}
+
+.perfil {
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+  /* border-radius: 50%; */
+  margin-right: 10px;
+}
+
+.logo {
+  font-family: 'Odibee Sans', cursive;
+  padding-top: 1px;
+  /* font-size: 1.3rem; */
+}
+
+p {
+  margin: 0px;
+}
+
+.Title .right {
+  display: flex;
+  flex-direction: row;
+  /* background-color: yellow; */
+  float: right;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.Title .right .options {
+  display: flex;
+  flex-direction: row;
+  text-align-last: center;
+  width: 20vw;
+  justify-content: space-between;
+  font-size: 1.1rem;
+}
+
+.Title .right .options p {
+  align-self: center;
   align-items: center;
+  min-width: 100px;
+}
+
+#shopIcon, #registerIcon, #loginIcon {
+  margin-right: 5px;
+}
+
+
+.Body {
+  flex: 1;
+  display: flex;
+  justify-content: stretch;
+  align-content: stretch;
+  align-items: stretch;
+  overflow-y: hidden;
+}
+
+.scrollWrapper {
+  display: flex;
+  min-height: 100%;
+  justify-content: stretch;
+  align-content: stretch;
+  align-items: stretch;
+  overflow-y: hidden;
+}
+
+.Home {
+  flex: 1;
+  height: 100%;
+  /* background-color: green; */
+  border-right: 4px solid #161252;
+  border-radius: 0 10px 10px 0;
+  overflow-y: auto;
+}
+
+.Bestiary {
+  flex: 1;
+  height: 100%;
+  /* background-color: green; */
+  border-right: 4px solid #161252;
+  border-radius: 0 10px 10px 0;
+  overflow-y: auto;
+}
+
+.BestiaryDetail {
+  flex: 1;
+  display:flex;
+  width: 100vw;
+  /* border-right: 4px solid #161252; */
+  /* border-radius: 0 10px 10px 0; */
+  overflow-y: auto;
+}
+
+.HomeAside {
+  width: 30vw;
+  height: 100%;
+  min-width: 200px;
+  /* background-color: red; */
+
+}
+
+.Construction {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  vertical-align: middle;
+  color: #161252;
+  align-items: center;
+
 }
 
-.App-link {
-  color: #61dafb;
+.LeftBar {
+  width: 10vw;
+  height: 100%;
+  border-right: 4px solid #161252;
+  border-radius: 10px 10px 10px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 768px) {
+  #app {
+    min-height: 100vh;
+    height: auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  .Body {
+    flex: 1;
+    display: flex;
+    min-height: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    overflow-y: auto;
+    display: flex;
+    flex: 1;
+    width: 100vw;
+    overflow-y: auto;
   }
+
+  .scrollWrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    overflow-y: auto;
+  }
+
+  .Home {
+    flex: 1;
+    height: 100%;
+    border-right: 0px;
+    overflow-y: hidden;
+  }
+
+  .Bestiary {
+    flex: 1;
+    height: 100%;
+    border-right: 0px;
+    overflow-y: hidden;
+  }
+
+  .BestiaryDetail {
+    flex: 1;
+    height: 100%;
+    border-right: 0px;
+    overflow-y: hidden;
+  }
+
+  .HomeAside {
+    width: 100%;
+    height: 250px;
+    border-bottom: 4px solid #161252;
+    border-radius: 10px 10px 10px 10px;
+  }
+}
+
+button:focus {
+  outline: none
 }

@@ -1,0 +1,38 @@
+#HomeAside {
+    height: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+#HomeAside h2{
+    color: #161252;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.divLatestVideos {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #HomeAside h2 {
+        margin-top: 10px;
+    }
+
+    .divLatestVideos {
+        /* background-color: red; */
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+        align-content: stretch;
+        align-items: flex-start;
+        /* margin-left: 30px; */
+        /* margin-right: 30px; */
+    }
+}
